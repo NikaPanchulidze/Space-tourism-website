@@ -1,0 +1,51 @@
+/* .section {
+  
+} */
+
+.headingSecondary {
+  font-size: 2.8rem;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 4.72px;
+
+  margin-bottom: 8rem;
+}
+
+.headingSecondary span {
+  color: #ffffff73;
+  font-weight: 700;
+}
+
+.planetList__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.planetList__details {
+  max-width: 42.5rem;
+}
+
+.section :global(.container) {
+  padding: 8rem 5rem;
+}
+
+.planetsList {
+  display: inline-block;
+  display: flex;
+  gap: 4rem;
+  font-size: 1.6rem;
+  letter-spacing: 2.7px;
+}
+
+.planetsList a:link,
+.planetsList a:visited{
+  text-decoration: none;
+  color: #D0D6F9;
+  padding-bottom: 1.6rem;
+}
+
+.planetsList a:hover,
+.planetsList a:global(.active) {
+  color: #fff;
+  border-bottom: 3px solid #fff;
+}

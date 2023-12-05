@@ -1,0 +1,8 @@
+.main {
+  background-image: url("/public/technology/background-technology-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+  padding-top: 4rem;
+}

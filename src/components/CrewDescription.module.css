@@ -1,0 +1,87 @@
+.section {
+  margin-top: 10rem;
+  color: #fff;
+}
+
+.section :global(.container) {
+  padding-bottom: 0;
+}
+
+.section :global(.container) img{
+  /* width: 20;
+  height: 20rem; */
+
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+
+  align-self: end;
+}
+
+.containerCrew {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 15rem 35rem 15rem;
+}
+
+.headingSecondary {
+  font-size: 2.8rem;
+  letter-spacing: 4.72px;
+
+  font-weight: 400;
+}
+
+.headingSecondary span {
+  color: #ffffff73;
+}
+
+.subHeader {
+  font-size: 3.2rem;
+  color: #ffffff73;
+  margin-bottom: 2rem;
+}
+
+.name {
+  font-size: 5.6rem;
+  color: #fff;
+  font-weight: 400;
+
+  margin-bottom: 3rem;
+}
+
+.detail {
+  max-width: 40rem;
+  font-size: 1.8rem;
+  line-height: 32px;
+  color: #D0D6F9;
+}
+
+.dots {
+  display: flex;
+  gap: 2rem;
+}
+
+.dots a:link,
+.dots a:visited {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+
+  background-color: #d0d6f97d;
+}
+
+.active {
+  background-color: #fff !important;
+}
+
+
+.crewDetails {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.crewDetails:global(.appear) {
+  opacity: 1;
+}

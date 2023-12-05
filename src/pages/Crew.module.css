@@ -1,0 +1,9 @@
+.main {
+  background-image: url("/public/crew/background-crew-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 18rem;
+}
