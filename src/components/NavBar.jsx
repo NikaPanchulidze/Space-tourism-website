@@ -4,7 +4,7 @@ import styles from './NavBar.module.css'
 function NavBar() {
   return (
     <section className={styles.section}>
-      <img src="/public/shared/logo.svg" alt="logo" />
+      <img src="/shared/logo.svg" alt="logo" />
       <div className={styles.helperContainer}>
         <div className={styles.line}></div>
         <nav className={styles.nav}>
