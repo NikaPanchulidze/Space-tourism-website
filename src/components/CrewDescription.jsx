@@ -9,6 +9,7 @@ function CrewDescription() {
   const data = Data.crew[index];
   const [shouldAppear, setShouldAppear] = useState(false);
 
+
   useEffect(() => {
     setShouldAppear(true);
     const id = setInterval(() => {

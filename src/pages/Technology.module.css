@@ -6,3 +6,9 @@
   height: 100vh;
   padding-top: 4rem;
 }
+
+@media (max-width: 77.54em) {
+  .main {
+    padding-top: 0;
+  }
+}

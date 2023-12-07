@@ -1,0 +1,63 @@
+.slider {
+  width: 55rem;
+  height: 100vh;
+  position: fixed;
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  backdrop-filter: blur(40px);
+
+  z-index: 999999;
+}
+
+.slider button {
+  background: none;
+  border: none;
+}
+
+.iconClosed {
+  width: 4.2rem;
+  height: 4.2rem;
+
+  position: absolute;
+  right: 4.2rem;
+  top: 4.2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 4rem;
+  padding: 15rem 8rem;
+}
+
+.item a:link,
+.item a:visited {
+  text-decoration: none;
+  font-size: 4rem;
+  font-weight: 400;
+  color: aliceblue;
+}
+
+@media (max-width: 30em) {
+  .slider {
+    max-width: 40rem;
+  }
+
+  .item a:link,
+  .item a:visited {
+    font-size: 3.6rem;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 5rem;
+    padding: 15rem 4rem;
+  }
+
+}

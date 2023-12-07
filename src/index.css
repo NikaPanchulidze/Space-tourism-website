@@ -45,3 +45,10 @@ body {
   margin: 0 auto;
   padding: 0 5rem;
 }
+
+@media (max-width: 85.1em) {
+  html {
+    /* 1rem = 10px */
+    font-size: 56.25%;
+  }
+}

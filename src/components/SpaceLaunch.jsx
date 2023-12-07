@@ -9,6 +9,21 @@ function SpaceLaunch() {
   const data = Data.technology[index];
 
   const [shouldAppear, setShouldAppear] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Attach the event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); // Empty dependency array ensures the effect runs only once on mount
 
   useEffect(() => {
     setShouldAppear(true);
@@ -47,7 +62,7 @@ function SpaceLaunch() {
               <h1 className={styles.name}>{data?.name.toUpperCase()}</h1>
               <p className={styles.detail}>{data?.description}</p>
             </div>
-            <img src={data?.images.portrait.slice(1)} alt="rocket" />
+            <img src={windowWidth > 1032 ? data?.images.portrait.slice(1) : data?.images.landscape.slice(1)} alt="rocket" />
           </div>
         </div>
       </div>

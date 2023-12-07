@@ -7,6 +7,7 @@ import Technology from "./pages/Technology"
 
 
 function App() {
+  
   return (
     <BrowserRouter>
       <Routes>

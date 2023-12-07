@@ -87,3 +87,138 @@
 .details:global(.appear) {
   opacity: 1;
 }
+
+@media (max-width: 77.54em) {
+  /* .subHeader {
+    font-size: 1.4rem;
+  } */
+  
+  .name {
+    font-size: 4.8rem;
+    color: #fff;
+    font-weight: 400;
+  
+    margin-bottom: 3rem;
+  }
+  
+  .detail {
+    font-size: 1.6rem;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 71em) {
+  .dots a:link,
+  .dots a:visited {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 1.6rem 2rem;
+  }
+
+  .content img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 64.5em){
+  .section {
+    margin-top: 4rem;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30rem 5rem 30rem;
+    gap: 5rem;
+    width: 100%;
+    justify-items: center;
+
+  
+    margin-top: 5rem;
+  }
+
+  .dots {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+
+  }
+
+  .content img {
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .section :global(.container) {
+    padding: 0;
+  }
+
+  .content img {
+    transform: none;
+  }
+
+  .headingSecondary {
+    margin-left: 5rem;
+  }
+
+  .dots a:link,
+  .dots a:visited {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 3.2rem 3rem;
+  }
+
+  
+  
+  .subHeader {
+    font-size: 2rem;
+    color: #ffffff73;
+    margin-bottom: 2rem;
+  }
+
+  .name {
+    font-size: 5.6rem;
+    color: #fff;
+    font-weight: 400;
+
+    margin-bottom: 5rem;
+  }
+
+  .detail {
+    max-width: 44rem;
+    font-size: 2.4rem;
+    line-height: 32px;
+  }
+
+}
+
+@media (max-width: 30em) {
+  .name {
+    margin-bottom: 0.5rem;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30rem 5rem 30rem;
+    gap: 3rem;
+    width: 100%;
+    justify-items: center;
+
+  
+    margin-top: 3rem;
+  }
+  
+  .section {
+    margin-top: 2rem;
+  }
+}

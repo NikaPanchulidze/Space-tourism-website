@@ -14,7 +14,9 @@ function Hero() {
              experience!
           </p>
         </div>
-        <Link to="destination"><button>EXPLORE</button></Link>
+        <div className={styles.active}>
+          <Link to="destination"><button>EXPLORE</button></Link>
+        </div>
       </div>
     </section>
   )

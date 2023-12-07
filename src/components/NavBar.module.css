@@ -22,7 +22,7 @@
   position: relative;
 }
 
-.section img {
+.logo {
   height: 5.2rem;
   width: 5.2rem;
 }
@@ -85,4 +85,88 @@
 
 .item a:global(.active) {
   border-bottom: 3px solid #fff;
+}
+
+@media (max-width: 102em) {
+  .line {
+    width: 57rem; 
+  }
+}
+
+@media (max-width: 99.2em) {
+  .line {
+    width: 50rem; 
+  }
+}
+@media (max-width: 94.8em) {
+  .line {
+    width: 45rem; 
+  }
+}
+@media (max-width: 91.5em) {
+  .line {
+    width: 40rem; 
+  }
+}
+@media (max-width: 88.4em) {
+  .line {
+    width: 35rem; 
+  }
+}
+@media (max-width: 77.54em) {
+  .line {
+    display: none;
+  }
+
+  .list {
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 15rem;
+  }
+
+  .nav {
+    width: 70rem;
+  }
+}
+
+@media (max-width: 53.12em) {
+  .nav {
+    width: 60rem;
+  }
+
+  .list {
+    display: flex;
+    /* align-items: center; */
+  
+    list-style: none;
+    justify-content: space-between;
+  
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 5rem;
+    gap: 6rem;
+  }
+}
+
+@media (max-width: 45.5em) {
+  .openIcon {
+    padding: 4rem;
+    background: none;
+    border: none;
+  }
+
+  .openIcon img {
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+  
+  .section {
+    margin-left: 5rem;
+    
+    height: 9.6rem;
+  
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+  }
 }
